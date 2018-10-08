@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:id="@+id/text_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_book_name"
+            style="@style/ListViewName"
+            tools:text="Book name" />
+
+        <TextView
+            android:id="@+id/item_book_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="$ 5.00" />
+
+        <TextView
+            android:id="@+id/item_book_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="10" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/item_sale_button"
+        style="@style/ListItemButtonTheme"
+        android:text="@string/list_item_sale_button" />
+
+</RelativeLayout>
